@@ -1,12 +1,10 @@
 
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/cambodian-genocide/'
-  }
-} : {}
+
 
 export default {
-  ...routerBase, 
+  router : {
+    base: '/cambodian-genocide/'
+  },
   mode: 'spa',
   /*
   ** Headers of the page

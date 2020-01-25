@@ -2,7 +2,7 @@
   <div class="home1">
     <div class="picture">
     
-    <img src="/000044.JPG">
+    <img src="/cambodian-genocide/000044.JPG">
      <div class="inner_box">
       <h2><nuxt-link :to="{path:'/cambodian-genocide'}">Cambodian Genocide: Home </nuxt-link></h2>
      </div>    
