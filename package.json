@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deplay": "push-dir --dir=dist --branch=master --cleanup",
+    "deplay": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
   },
