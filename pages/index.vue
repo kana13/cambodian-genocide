@@ -22,7 +22,8 @@
 }
 .picture .inner_box{
   position:absolute;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:#000000; 
+  opacity: 0.7;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
@@ -39,7 +40,7 @@
 }
 
 .picture .inner_box h2 a{
-  color: #F0B49E; 
+  color: #ffffff; 
 }
 
 </style>
