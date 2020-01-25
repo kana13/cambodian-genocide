@@ -1,72 +1,45 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        cambodian-genocide
-      </h1>
-      <h2 class="subtitle">
-        My neat Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="home1">
+    <div class="picture">
+    
+    <img src="/000044.JPG">
+     <div class="inner_box">
+      <h2><nuxt-link :to="{path:'/cambodian-genocide'}">Cambodian Genocide: Home </nuxt-link></h2>
+     </div>    
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+  export default{
 
-export default {
-  components: {
-    Logo
   }
-}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scooped>
+.picture{
+  position:relative;
+}
+.picture .inner_box{
+  position:absolute;
+  background-color:rgba(0, 0, 0, 0.5);
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  padding:35px;
+  text-align:center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.picture .inner_box h2{
+  font-family: "Times New Roman", Times, serif;
+  text-align:center;
+  font-size: 26px;
+  font-weight:normal;
+  color:#F0B49E;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.picture .inner_box h2 a{
+  color: #F0B49E; 
 }
 
-.links {
-  padding-top: 15px;
-}
 </style>
