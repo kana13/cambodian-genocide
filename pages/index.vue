@@ -4,7 +4,8 @@
     
     <img src="/cambodian-genocide/000044.JPG">
      <div class="inner_box">
-      <h2><nuxt-link :to="{path:'/cambodian-genocide'}">Cambodian Genocide: Home </nuxt-link></h2>
+      <h2>Cambodian Genocide</h2>
+      <button class="homeb"><nuxt-link :to="{path:'/cambodian-genocide'}">Home </nuxt-link></button>
      </div>    
     </div>
   </div>
@@ -17,6 +18,7 @@
 </script>
 
 <style scooped>
+
 .picture{
   position:relative;
 }
@@ -36,11 +38,21 @@
   text-align:center;
   font-size: 26px;
   font-weight:normal;
-  color:#F0B49E;
+  color:#ffffff;
 }
 
 .picture .inner_box h2 a{
   color: #ffffff; 
 }
 
+.homeb{
+  background-color: #000000;
+  width: 50%;
+  text-align: center; 
+  font-size: 15px; 
+  margin-top: 15px; 
+}
+.homeb a{
+   color: #ffffff;
+}
 </style>

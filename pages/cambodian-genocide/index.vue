@@ -1,16 +1,53 @@
 <template>
   <div class="home">
   <Header></Header>
-    <ul class="pages">
-     <li><nuxt-link :to="{path:'/cambodian-genocide/who'}"> Who </nuxt-link></li>
-     <li><nuxt-link :to="{path:'/cambodian-genocide/where'}"> Where </nuxt-link></li>
-     <li><nuxt-link :to="{path:'/cambodian-genocide/why'}"> Why </nuxt-link></li>
-     <li><nuxt-link :to="{path:'/cambodian-genocide/what'}"> What </nuxt-link></li>
-     <li><a class="influence">Influence</a></li> 
-     <li><nuxt-link :to="{path:'/cambodian-genocide/influence/education'}"> Influence on Education </nuxt-link></li>
-     <li><nuxt-link :to="{path:'/cambodian-genocide/influence/poverty'}"> Poverty </nuxt-link></li>
-    </ul> 
+    <div class="welcome">
+      Welcome 
+    </div>
+    <div class="intro">
+      Welcome to my website regarding the Cambodian Genocide. For my personal project, I researched about the Cambodian Genocide and how it affects current society, primarily education. I chose this topic since when I was 13, I visited Cambodia and one of the killing fields in Siem Reap, and was shocked at the time. I wanted to investigate more, and I thought that this personal project would be a great opportunity in order to understand and research deeply about this topic. My product is an article, but I have also decided to create a website that has the same information on a website so that people could obtain the information I organsied online. 
+    </div> 
+   
+    <div class="pages">
+     <div class="who"> Who started it? 
+      <div class="whob">
+      <button class="button1">
+        <nuxt-link :to="{path:'/cambodian-genocide/who'}"> Details </nuxt-link>
+      </button>
+      </div>
+     </div>
+
+     <div class="what">What happened? When/Where did it occur?
+      <div class="whatb">
+      <button class="button3">
+        <nuxt-link :to="{path:'/cambodian-genocide/what'}"> Details </nuxt-link>
+      </button>
+      </div>
+     </div>
+
+     <div class="edu"> Influence on education. 
+      <div class="edub">
+      <button class="button4">
+      <nuxt-link :to="{path:'/cambodian-genocide/influence/education'}"> Details</nuxt-link>
+      </button>
+      </div>
+     </div>
+     
+     <div class="others"> Influence on others. 
+     <div class="othersb">
+     <button class="button5">
+        <nuxt-link :to="{path:'/cambodian-genocide/influence/others'}"> Details </nuxt-link>
+     </button>
+     </div> 
+     </div>
+    </div> 
+    
+    <div class="dummy">
+     <nuxt-link :to="{path:'/cambodian-genocide'}">  Home </nuxt-link> 
+    </div>
   </div>
+
+
 </template>
 
 <script>
@@ -24,18 +61,136 @@
 .pages {
     text-align: left; 
     font-family: "Times New Roman", Times, serif;
-    padding-left: 15px; 
-    padding-top: 20px; 
-}
 
-.pages a{
-    color: #774F38;
 }
 
 .home{
-    background-image: linear-gradient(to bottom, #f1d4af, #efd7b4, #eedbba, #eddec0, #ece1c6, #e8e3c9, #e4e4cc, #e0e5cf, #d7e5d1, #cfe4d5, #c9e2d8, #c5e0dc);
-    min-height: 100vh;
+    background-color: #ffffff; 
+    min-height: 300vh;
 }
 
+.dummy{
+  min-height: 30vh; 
+  position: inline-block; 
+  text-align: center; 
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 100px; 
+  background-color: #000000; 
+  opacity: 0.98; 
+  color: #ffffff; 
+}
+
+.dummy a{
+  color: #ffffff;
+}
+
+.welcome{
+  font-weight: bold; 
+  font-size: 25px; 
+  text-align: center; 
+  font-family: "Times New Roman", Times, serif;
+  color: #000000; 
+  padding-top: 10px;
+}
+
+.intro{
+  font-size: 13px; 
+  text-align: center; 
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 10px; 
+}
+
+.who{
+  padding-top: 50px; 
+  background-color: #000000; 
+  opacity: 0.9; 
+  color: #ffffff; 
+  height: 130px;
+  margin-top: 30px; 
+  padding-left: 15px; 
+  position: inline-block; 
+}
+
+.who a{
+  color: #ffffff; 
+}
+
+.what{
+  padding-top: 40px; 
+  background-color: #ffffff; 
+  opacity: 0.9; 
+  color: #000000; 
+  height: 100px;
+  margin-top: 30px; 
+  padding-left: 15px; 
+  position: inline-block;
+}
+
+.what a{
+  color: #000000; 
+}
+
+.edu{
+  padding-top: 50px; 
+  background-color: #000000; 
+  opacity: 0.9; 
+  color: #ffffff; 
+  height: 130px;
+  margin-top: 30px; 
+  padding-left: 15px; 
+  position: inline-block; 
+}
+
+.edu a{
+  color: #ffffff; 
+}
+
+.others{
+  padding-top: 30px; 
+  background-color: #ffffff; 
+  opacity: 0.9; 
+  color: #000000; 
+  height: 120px;
+  margin-top: 30px; 
+  padding-left: 15px; 
+  position: inline-block; 
+}
+
+.others a{
+  color: #000000; 
+}
+
+
+.button1{
+  color: #ffffff; 
+  background-color: #000000; 
+  display: inline-block; 
+  margin-top: 5px; 
+}
+
+.button3{
+  color: #000000; 
+  background-color: #ffffff; 
+  opacity: 0.9;
+  display: inline-block; 
+  margin-top: 5px; 
+}
+
+
+.button4{
+  color: #ffffff; 
+  background-color: #000000; 
+  opacity: 0.9;
+  display: inline-block; 
+  margin-top: 5px; 
+}
+
+.button5{
+  color: #000000; 
+  background-color: #ffffff; 
+  opacity: 0.9;
+  display: inline-block; 
+  margin-top: 5px; 
+}
 
 </style>
