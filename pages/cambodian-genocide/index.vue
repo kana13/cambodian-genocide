@@ -41,6 +41,14 @@
      </div> 
      </div>
     </div> 
+
+     <div class="edu"> Interview. 
+      <div class="edub">
+      <button class="button4">
+      <nuxt-link :to="{path:'/cambodian-genocide/influence/interview'}"> Details</nuxt-link>
+      </button>
+      </div>
+     </div>
     
     <div class="dummy">
      <nuxt-link :to="{path:'/cambodian-genocide'}">  Home </nuxt-link> 
@@ -70,18 +78,18 @@
 }
 
 .dummy{
-  min-height: 30vh; 
+  min-height: 20vh; 
   position: inline-block; 
   text-align: center; 
   font-family: "Times New Roman", Times, serif;
   padding-top: 100px; 
-  background-color: #000000; 
+  background-color: #ffffff; 
   opacity: 0.98; 
-  color: #ffffff; 
+  color: #000000; 
 }
 
 .dummy a{
-  color: #ffffff;
+  color: #000000;
 }
 
 .welcome{
