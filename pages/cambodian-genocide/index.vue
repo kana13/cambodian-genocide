@@ -42,8 +42,8 @@
      </div>
     </div> 
 
-     <div class="edu"> Interview. 
-      <div class="edub">
+     <div class="inter"> Interview. 
+      <div class="interb">
       <button class="button4">
       <nuxt-link :to="{path:'/cambodian-genocide/influence/interview'}"> Details</nuxt-link>
       </button>
@@ -67,7 +67,6 @@
 
 <style scooped>
 .pages {
-    text-align: left; 
     font-family: "Times New Roman", Times, serif;
 
 }
@@ -83,18 +82,18 @@
   text-align: center; 
   font-family: "Times New Roman", Times, serif;
   padding-top: 100px; 
-  background-color: #ffffff; 
+  background-color: #000000; 
   opacity: 0.98; 
-  color: #000000; 
+  color: #ffffff; 
 }
 
 .dummy a{
-  color: #000000;
+  color: #ffffff;
 }
 
 .welcome{
   font-weight: bold; 
-  font-size: 25px; 
+  font-size: 30px; 
   text-align: center; 
   font-family: "Times New Roman", Times, serif;
   color: #000000; 
@@ -106,17 +105,19 @@
   text-align: center; 
   font-family: "Times New Roman", Times, serif;
   padding-top: 10px; 
+  padding-left: 5px; 
+  padding-right: 5px; 
 }
 
 .who{
-  padding-top: 50px; 
+  padding-top: 40px; 
   background-color: #000000; 
-  opacity: 0.9; 
+  opacity: 0.95; 
   color: #ffffff; 
   height: 130px;
   margin-top: 30px; 
-  padding-left: 15px; 
-  position: inline-block; 
+  text-align: center;  
+  font-size: 17px; 
 }
 
 .who a{
@@ -124,14 +125,14 @@
 }
 
 .what{
-  padding-top: 40px; 
+  padding-top: 30px; 
   background-color: #ffffff; 
-  opacity: 0.9; 
+  opacity: 0.95; 
   color: #000000; 
   height: 100px;
   margin-top: 30px; 
-  padding-left: 15px; 
-  position: inline-block;
+  text-align: center; 
+  font-size: 17px; 
 }
 
 .what a{
@@ -139,29 +140,42 @@
 }
 
 .edu{
-  padding-top: 50px; 
+  padding-top: 40px; 
   background-color: #000000; 
-  opacity: 0.9; 
+  opacity: 0.95; 
   color: #ffffff; 
   height: 130px;
   margin-top: 30px; 
-  padding-left: 15px; 
-  position: inline-block; 
+  text-align: center;
+  font-size:17px; 
 }
 
 .edu a{
+  color: #ffffff; 
+}
+.inter{
+  padding-top: 40px; 
+  background-color: #000000; 
+  opacity: 0.95; 
+  color: #ffffff; 
+  height: 130px;
+  margin-top: 30px; 
+  text-align: center;
+  font-size:17px; 
+  font-family: "Times New Roman", Times, serif;
+}
+.inter a{
   color: #ffffff; 
 }
 
 .others{
   padding-top: 30px; 
   background-color: #ffffff; 
-  opacity: 0.9; 
   color: #000000; 
-  height: 120px;
+  height: 100px;
   margin-top: 30px; 
-  padding-left: 15px; 
-  position: inline-block; 
+  text-align: center;
+  font-size: 17px;  
 }
 
 .others a{
@@ -172,7 +186,7 @@
 .button1{
   color: #ffffff; 
   background-color: #000000; 
-  display: inline-block; 
+  text-align: center;
   margin-top: 5px; 
 }
 
@@ -180,7 +194,7 @@
   color: #000000; 
   background-color: #ffffff; 
   opacity: 0.9;
-  display: inline-block; 
+  text-align: center;
   margin-top: 5px; 
 }
 
@@ -189,7 +203,7 @@
   color: #ffffff; 
   background-color: #000000; 
   opacity: 0.9;
-  display: inline-block; 
+  text-align: center;
   margin-top: 5px; 
 }
 
@@ -197,7 +211,7 @@
   color: #000000; 
   background-color: #ffffff; 
   opacity: 0.9;
-  display: inline-block; 
+  text-align: center;
   margin-top: 5px; 
 }
 
